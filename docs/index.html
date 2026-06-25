@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>k8sgrade</title>
+  <meta name="description" content="k8sgrade: Kubernetes health and security scoring in one Bash script.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="hero">
+    <p class="eyebrow">Kubernetes Health and Security Score</p>
+    <h1>k8sgrade</h1>
+    <p class="subtitle">
+      A Bash tool that inspects your cluster namespace, scores operational and security posture,
+      and gives practical fixes.
+    </p>
+    <div class="hero-actions">
+      <button class="btn primary" data-copy="./k8sgrade.sh">Copy Start Command</button>
+      <a class="btn ghost" href="https://github.com/DevOpsArts/k8sgrade.sh" target="_blank" rel="noopener noreferrer">Open Repository</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="panel reveal">
+      <h2>Quick Start</h2>
+      <pre><code>./k8sgrade.sh -c your-context -n your-namespace</code></pre>
+      <p>Run in interactive mode if you want guided context and namespace selection.</p>
+      <pre><code>./k8sgrade.sh</code></pre>
+    </section>
+
+    <section class="grid reveal">
+      <article class="card">
+        <h3>What It Checks</h3>
+        <ul>
+          <li>Node and pod health</li>
+          <li>Workload safety controls</li>
+          <li>Network and disruption protections</li>
+          <li>Service account and RBAC risk</li>
+          <li>Trivy vulnerability signals</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Prerequisites</h3>
+        <ul>
+          <li>bash</li>
+          <li>kubectl</li>
+          <li>Kubernetes context access</li>
+          <li>Valid kubeconfig</li>
+        </ul>
+        <p class="muted">Optional: python3 and trivy.</p>
+      </article>
+
+      <article class="card">
+        <h3>Exports</h3>
+        <ul>
+          <li>CSV summary report</li>
+          <li>Score breakdown rows</li>
+          <li>Recommendations list</li>
+        </ul>
+        <pre><code>./k8sgrade.sh -c ctx -n ns --export-csv ./k8sgrade-report.csv</code></pre>
+      </article>
+    </section>
+
+    <section class="panel reveal">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Validates prerequisites and input options.</li>
+        <li>Selects context and namespace.</li>
+        <li>Collects health and security signals.</li>
+        <li>Applies score deductions from 100.</li>
+        <li>Prints report, grade, and optional CSV export.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer reveal">
+    <p>Built for fast Kubernetes posture checks in terminal-first workflows.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
