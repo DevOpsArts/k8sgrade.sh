@@ -40,7 +40,7 @@ GitHub Pages deployment is configured through:
 
 - `.github/workflows/pages.yml`
 
-On push to `main`, GitHub Actions deploys the `docs/` folder to GitHub Pages.
+On push to `main`, GitHub Actions publishes the `docs/` folder to the `gh-pages` branch.
 
 ## Quick Start
 
