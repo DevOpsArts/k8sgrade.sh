@@ -155,6 +155,31 @@ ul, ol {
   padding-left: 18px;
 }
 
+.grade-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffef9;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grade-table th,
+.grade-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.grade-table thead th {
+  background: #f6f1e5;
+  font-weight: 700;
+}
+
+.grade-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
 .muted {
   color: var(--muted);
 }

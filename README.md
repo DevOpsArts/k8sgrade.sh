@@ -257,6 +257,19 @@ Current penalty areas include:
 
 The report prints a score breakdown table so you can see each deduction.
 
+## Grade Metrics
+
+Final score maps to grade as follows:
+
+| Score Range | Grade | Meaning |
+|---|---|---|
+| 95-100 | A+ | Production hardened |
+| 85-94 | A | Production ready |
+| 70-84 | B | Mostly healthy, minor gaps |
+| 55-69 | C | Needs attention |
+| 40-54 | D | Significant issues |
+| 0-39 | F | Critical, not production ready |
+
 ## Output Sections
 
 Typical output includes:
