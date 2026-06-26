@@ -42,6 +42,19 @@ GitHub Pages deployment is configured through:
 
 On push to `main`, GitHub Actions publishes the `docs/` folder to the `gh-pages` branch.
 
+## Video Walkthrough
+
+A ready-to-record walkthrough script is available at:
+
+- `docs/video-walkthrough.md`
+
+It includes:
+
+- a 4-6 minute timeline
+- voice-over script
+- on-screen command sequence
+- recording and publishing tips
+
 ## Quick Start
 
 ### Interactive mode (guided)
