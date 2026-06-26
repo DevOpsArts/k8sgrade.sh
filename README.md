@@ -57,6 +57,12 @@ It includes:
 
 ## Quick Start
 
+### Clone and enter repository
+```bash
+git clone https://github.com/DevOpsArts/k8sgrade.sh.git
+cd k8sgrade.sh
+```
+
 ### Interactive mode (guided)
 ```bash
 ./k8sgrade.sh
